@@ -7,15 +7,16 @@
   <title>Testing Jim Thatcher's favelets for Accessibility</title>
   <style>
     .buttonRole {
-      clear: both;
       margin: 0 0 10px 0;
       padding: 2px 10px;
       text-align: center; 
       border: 1px solid black;
       background-color: #eee;
       float: left;
-      height:60px;
-      width:80px;
+      height:40px;
+      width:70px;
+      moz-border-radius: 15px;
+     -webkit-border-radius: 15px;
     }
     .title {
       display:block;
@@ -28,19 +29,35 @@
 <body>
 
   <div class="testHolder">
-    <span class="title">Div Element with role=button and no tabindex</span>
+    <span class="title">Div with role=button and no tabindex</span>
     <div role="button" class="buttonRole"></div>
   </div>
   
   <div class="testHolder">
-    <span class="title">Div Element with role=button and tabindex</span>
+    <span class="title">Div with role=button and tabindex</span>
     <div role="button" tabindex="0" class="buttonRole"></div>
   </div>
 
   <div class="testHolder">
-    <span class="title">Div Element with no role and tabindex</span>
+    <span class="title">Div with no role and tabindex</span>
     <div class="buttonRole"></div>
   </div>
+
+  <div class="testHolder">
+    <span class="title">Span with role=button and no tabindex</span>
+    <span role="button" class="buttonRole"></div>
+  </div>
+
+   <div class="testHolder">
+    <span class="title">Span with role=button and tabindex</span>
+    <span role="button" class="buttonRole" tabindex="0"></div>
+  </div>
+
+   <div class="testHolder">
+    <span class="title">Span with no role and tabindex</span>
+    <span class="buttonRole"></div>
+  </div>
+
   <script src="ButtonRoleExternal.js"></script>
 </body>
 </html>
