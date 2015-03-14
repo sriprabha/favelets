@@ -1,4 +1,4 @@
 This project is to try out writing my own favelets/bookmarklets to test accessibility issues on a webpage, using Jim Thatcher's favelets as a reference guide. 
 
 ButtonRoleFavelets
-This favelet marks all the div elements on the webpage that have a role=button and no tabindex value set. 
+This favelet marks all the div and span elements on the webpage that have a role=button and no tabindex value set. 
